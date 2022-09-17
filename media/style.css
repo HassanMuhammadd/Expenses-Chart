@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --Softred: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Darkbrown: hsl(25, 47%, 15%);
+    --Mediumbrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Verypaleorange: hsl(33, 100%, 98%);
+}
+
+.holder {
+    background-color: var(--Cream);
+    height: 100vh;
+}
+
+.app {
+    width: 35%;
+}
+
+@media (max-width:600px) {
+    .app {
+        width: 95%;
+    }
+}
+
+.balance {
+    background-color: var(--Softred);
+    border-radius: 15px;
+}
+
+.chart {
+    background-color: white;
+    border-radius: 15px;
+    color: var(--Darkbrown)
+}
+
+.beforeAmount {
+    background-color: var(--Darkbrown);
+    color: white;
+    width: 110%;
+    border-radius: 3px;
+    transform: translateX(-3px);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0;
+    visibility: hidden;
+}
+
+.data {
+    background-color: var(--Softred);
+    height: 5px;
+    border-radius: 5px;
+}
+
+.col {
+    cursor: pointer;
+}
+
+.col:hover>.beforeAmount {
+    visibility: visible;
+}
+
+.data:hover {
+    opacity: .7;
+}
+
+.special {
+    background-color: var(--Cyan);
+}
+
+.col h6 {
+    opacity: .7;
+}
